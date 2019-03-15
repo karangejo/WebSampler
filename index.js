@@ -5,11 +5,26 @@ var input = document.getElementById('input1');
 var buttons = document.querySelectorAll('.buttons');
 //var slider = document.getElementById("myRange");
 var radio = document.querySelectorAll('.radios');
+var hr = document.querySelectorAll('hr');
+var div = document.getElementsByClassName('mycontainer');
 
-console.log(typeof radio);
-console.log(radio);
+console.log(div);
+
+Object.keys(div).map(function(keys){
+  div[keys].style.padding= "20px";
+})
+
+Object.keys(hr).map(function(keys){
+  hr[keys].style.margin = "0";
+  hr[keys].style.color="#8b104e"
+})
 
 Object.keys(radio).map(function(keys){
+  radio[keys].style.position="relative";
+  radio[keys].style.opacity="1";
+  radio[keys].style.pointerEvents="auto";
+
+
   radio[keys].onchange = function(e){
     playBackRate = radio[keys].value
     console.log('playbackRate',playBackRate);
@@ -18,12 +33,14 @@ Object.keys(radio).map(function(keys){
 
 Object.keys(buttons).map(function(keys){
   buttons[keys].style.textAlign= 'center';
+  buttons[keys].className += " waves-effect waves-light btn";
+  buttons[keys].style.backgroundColor = "#ff9900";
+  buttons[keys].style.fontFamily = "Faster One";
+  buttons[keys].style.color = "#8b104e";
+
+
 })
 
-console.log(typeof input1);
-console.log('sounds: ',sounds);
-console.log('inputs: ',input);
-console.log('buttons: ',buttons);
 
 input.onchange = function (e){
   console.log(this.files);
@@ -46,7 +63,6 @@ function playSound (index){
 }
 
 document.addEventListener("keydown", function (e){
-  console.log(e);
   switch (e.key) {
     case 'a':
       playSound(0);

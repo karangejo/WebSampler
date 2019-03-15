@@ -2,40 +2,48 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Faster One' rel='stylesheet'>
+    <title>Web Sampler</title>
   </head>
-  <body>
+  <body style="background-color:#ca431d">
+    <nav style="background-color:#ff9900; height:110px">
+    <div class="nav-wrapper">
+      <div class="container">
+        <a href="#" class="brand-logo center" style="color:#520556;font-size:45px; font-family: 'Faster One' ">Web Sampler</a>
 
-    <h1 align="center">Web Sampler</h1>
+      </div>
+    </div>
+  </nav>
+
 
     <hr/>
 
-    <div style=" vertical-align: middle; text-align: center;">
-      <h4>Upload up to 8 sound files</h4>
-      <input class="inputs" type="file" id="input1" multiple align="center"/>
+    <div  class="container mycontainer" style=" vertical-align: middle; text-align: center; font-family: 'Faster One'">
+      <h5>Upload up to 8 sound files</h5>
+      <input style="" class="inputs" type="file" id="input1" multiple align="center"/>
     </div>
 
     <hr>
-    <table style="margin: auto;text-align:center">
-      <tr>
-        <td>
-          <audio class="audios" id="sound1" controls ></audio>
-          <audio class="audios" id="sound2" controls ></audio>
-          <audio class="audios" id="sound3" controls ></audio>
-          <audio class="audios" id="sound4" controls ></audio>
-        </td>
-        <td>
-          <audio class="audios" id="sound5" controls ></audio>
-          <audio class="audios" id="sound6" controls ></audio>
-          <audio class="audios" id="sound7" controls ></audio>
-          <audio class="audios" id="sound8" controls ></audio>
-        </td>
-      </tr>
-    </table>
+
+    <div class="container mycontainer">
+      <div class="container">
+        <audio class="audios" id="sound1" controls ></audio>
+        <audio class="audios" id="sound2" controls ></audio>
+        <audio class="audios" id="sound3" controls ></audio>
+        <audio class="audios" id="sound4" controls ></audio>
+      </div>
+      <div class="container">
+        <audio class="audios" id="sound5" controls ></audio>
+        <audio class="audios" id="sound6" controls ></audio>
+        <audio class="audios" id="sound7" controls ></audio>
+        <audio class="audios" id="sound8" controls ></audio>
+      </div>
+    </div>
 
     <hr>
-      <div style=" vertical-align: middle; text-align: center;">
-        <h4>Playback Rate of Samples</h4>
+      <div class="container mycontainer" style=" vertical-align: middle; text-align: center">
+        <h5 style=" font-family: 'Faster One'">Playback Rate of Samples</h5>
 
         <form id="radio">
           <table style="margin: auto">
@@ -58,7 +66,7 @@
       </div>
     <hr/>
 
-  <div style=" vertical-align: middle; text-align: center;">
+  <div class="container mycontainer" style=" vertical-align: middle; text-align: center;">
 
   <button class="buttons" type="button" name="button" id="button1">A</button>
   <button class="buttons" type="button" name="button" id="button2">S</button>
