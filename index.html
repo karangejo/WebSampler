@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1 align="center">Web Sampler</h1>
+
+    <hr/>
+
+    <div style=" vertical-align: middle; text-align: center;">
+      <h4>Upload up to 8 sound files</h4>
+      <input class="inputs" type="file" id="input1" multiple align="center"/>
+    </div>
+
+    <hr>
+    <table style="margin: auto;text-align:center">
+      <tr>
+        <td>
+          <audio class="audios" id="sound1" controls ></audio>
+          <audio class="audios" id="sound2" controls ></audio>
+          <audio class="audios" id="sound3" controls ></audio>
+          <audio class="audios" id="sound4" controls ></audio>
+        </td>
+        <td>
+          <audio class="audios" id="sound5" controls ></audio>
+          <audio class="audios" id="sound6" controls ></audio>
+          <audio class="audios" id="sound7" controls ></audio>
+          <audio class="audios" id="sound8" controls ></audio>
+        </td>
+      </tr>
+    </table>
+
+    <hr>
+      <div style=" vertical-align: middle; text-align: center;">
+        <h4>Playback Rate of Samples</h4>
+
+        <form id="radio">
+          <table style="margin: auto">
+            <tr>
+              <td>
+                <input class="radios" type="radio" name="rate" value="0.5">1/2 speed<br>
+                <input class="radios" type="radio" name="rate" value="0.75">3/4 speed<br>
+                <input class="radios" type="radio" name="rate" value="1" checked> normal speed<br>
+              </td>
+              <td>
+                <input class="radios" type="radio" name="rate" value="2"> 2x speed<br>
+                <input class="radios" type="radio" name="rate" value="3">3x speed<br>
+                <input class="radios" type="radio" name="rate" value="4">4x speed<br>
+              </td>
+            </tr>
+          </table>
+
+
+       </form>
+      </div>
+    <hr/>
+
+  <div style=" vertical-align: middle; text-align: center;">
+
+  <button class="buttons" type="button" name="button" id="button1">A</button>
+  <button class="buttons" type="button" name="button" id="button2">S</button>
+  <button class="buttons" type="button" name="button" id="button3">D</button>
+  <button class="buttons" type="button" name="button" id="button4">F</button>
+  <button class="buttons" type="button" name="button" id="button5">J</button>
+  <button class="buttons" type="button" name="button" id="button6">K</button>
+  <button class="buttons" type="button" name="button" id="button7">L</button>
+  <button class="buttons" type="button" name="button" id="button8">;</button>
+  </div>
+
+  </body>
+   <script src="index.js"></script>
+</html>
